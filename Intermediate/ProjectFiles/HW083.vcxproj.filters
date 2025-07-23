@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <None Include="..\..\HW083.uproject" />
+    <Filter Include="Source">
+      <UniqueIdentifier>{F31BBDD1-B3E8-3BCC-9652-680E16935819}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\HW083.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <None Include="..\..\Source\HW083Editor.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <None Include="..\..\.vsconfig" />
+    <Filter Include="Config">
+      <UniqueIdentifier>{FA535FFB-25E1-3D20-B416-52F9BE21E06E}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Config\DefaultEditor.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultEngine.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultGame.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultInput.ini">
+      <Filter>Config</Filter>
+    </None>
+    <Filter Include="Source\HW083">
+      <UniqueIdentifier>{55B89E5E-3071-3B74-8CC8-246F810B2D52}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\HW083\HW083.Build.cs">
+      <Filter>Source\HW083</Filter>
+    </None>
+    <ClCompile Include="..\..\Source\HW083\HW083.cpp">
+      <Filter>Source\HW083</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\HW083\HW083.h">
+      <Filter>Source\HW083</Filter>
+    </ClCompile>
+    <Filter Include="Source\HW083\Private">
+      <UniqueIdentifier>{A7D7ABD5-D7BD-34E4-AC7F-D6A4EF265830}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\HW083\Private\BaseItem.cpp">
+      <Filter>Source\HW083\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\HW083\Private\BigCoinItem.cpp">
+      <Filter>Source\HW083\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\HW083\Private\CoinItem.cpp">
+      <Filter>Source\HW083\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\HW083\Private\HealingItem.cpp">
+      <Filter>Source\HW083\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\HW083\Private\HWCharacter.cpp">
+      <Filter>Source\HW083\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\HW083\Private\HWGameInstance.cpp">
+      <Filter>Source\HW083\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\HW083\Private\HWGameMode.cpp">
+      <Filter>Source\HW083\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\HW083\Private\HWGameState.cpp">
+      <Filter>Source\HW083\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\HW083\Private\HWPlayerController.cpp">
+      <Filter>Source\HW083\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\HW083\Private\ItemInterface.cpp">
+      <Filter>Source\HW083\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\HW083\Private\ItemSpawnRow.cpp">
+      <Filter>Source\HW083\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\HW083\Private\MineItem.cpp">
+      <Filter>Source\HW083\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\HW083\Private\SmallCoinItem.cpp">
+      <Filter>Source\HW083\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\HW083\Private\SpawnVolume.cpp">
+      <Filter>Source\HW083\Private</Filter>
+    </ClCompile>
+    <Filter Include="Source\HW083\Public">
+      <UniqueIdentifier>{17D4374B-4DEA-3536-A993-D22CCF8AC799}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\HW083\Public\BaseItem.h">
+      <Filter>Source\HW083\Public</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\HW083\Public\BigCoinItem.h">
+      <Filter>Source\HW083\Public</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\HW083\Public\CoinItem.h">
+      <Filter>Source\HW083\Public</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\HW083\Public\HealingItem.h">
+      <Filter>Source\HW083\Public</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\HW083\Public\HWCharacter.h">
+      <Filter>Source\HW083\Public</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\HW083\Public\HWGameInstance.h">
+      <Filter>Source\HW083\Public</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\HW083\Public\HWGameMode.h">
+      <Filter>Source\HW083\Public</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\HW083\Public\HWGameState.h">
+      <Filter>Source\HW083\Public</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\HW083\Public\HWPlayerController.h">
+      <Filter>Source\HW083\Public</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\HW083\Public\ItemInterface.h">
+      <Filter>Source\HW083\Public</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\HW083\Public\ItemSpawnRow.h">
+      <Filter>Source\HW083\Public</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\HW083\Public\MineItem.h">
+      <Filter>Source\HW083\Public</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\HW083\Public\SmallCoinItem.h">
+      <Filter>Source\HW083\Public</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\HW083\Public\SpawnVolume.h">
+      <Filter>Source\HW083\Public</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
