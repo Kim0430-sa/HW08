@@ -39,7 +39,7 @@ void AMineItem::ActivateItem(AActor* Activator)
 	bHasExploded = true;
 }
 
-void AMineItem::Explode()
+/*void AMineItem::Explode()
 {
 	UParticleSystemComponent* Particle = nullptr;
 	
@@ -69,7 +69,46 @@ void AMineItem::Explode()
 	for (AActor* Actor : OverlappingActors)
 	{
 		if (Actor && Actor->ActorHasTag("Player"))
+		{*/
+void AMineItem::Explode()
+{
+	// 원시 포인터로 참조되어 레벨 전환 시 가비지 컬렉팅이 이루어지지 않아 터진 것으로 예상.
+	// 약한 참조로 변경하여 가비지 컬렉팅이 이루어지도록 수정
+	// UParticleSystemComponent > Particle = nullptr
+
+	// 언리얼 스마트 포인트
+	// C++의 Weakptr인데, UObject 전용인 스마트 포인터.
+	TWeakObjectPtr<UParticleSystemComponent> Particle = nullptr;
+
+	if (ExplosionParticle)
+	{
+		Particle = UGameplayStatics::SpawnEmitterAtLocation(
+			GetWorld(),
+			ExplosionParticle,
+			GetActorLocation(),
+			GetActorRotation(),
+			false
+		);
+	}
+
+	if (ExplosionSound)
+	{
+		UGameplayStatics::PlaySoundAtLocation(
+			GetWorld(),
+			ExplosionSound,
+			GetActorLocation()
+		);
+	}
+
+	// 폭발 범위 안에 있는 액터들 전부 확인
+	TArray<AActor*> OverlappingActors;
+	ExplosionCollision->GetOverlappingActors(OverlappingActors);
+
+	for (AActor* Actor : OverlappingActors)
+	{
+		if (Actor && Actor->ActorHasTag("Player"))
 		{
+			// 데미지 주기
 			UGameplayStatics::ApplyDamage(
 				Actor,
 				ExplosionDamage,
@@ -81,20 +120,23 @@ void AMineItem::Explode()
 	}
 	
 	DestroyItem();
-
-	if (Particle)
+	
+	if (Particle.Get())
 	{
 		FTimerHandle DestroyParticleTimerHandle;
-
 		GetWorld()->GetTimerManager().SetTimer(
 			DestroyParticleTimerHandle,
 			[Particle]()
 			{
-				Particle->DestroyComponent();
+				//Pending kill
+				if (IsValid(Particle.Get()))
+				{
+					Particle->DestroyComponent();
+				}
 			},
 			2.0f,
 			false
-			);
+		);
 	}
 }
 

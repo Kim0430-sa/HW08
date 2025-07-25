@@ -95,15 +95,15 @@ UScriptStruct* Z_Construct_UScriptStruct_FItemSpawnRow()
 // End ScriptStruct FItemSpawnRow
 
 // Begin Registration
-struct Z_CompiledInDeferFile_FID_git_HW083_Source_HW083_Public_ItemSpawnRow_h_Statics
+struct Z_CompiledInDeferFile_FID_git_HW08_Source_HW083_Public_ItemSpawnRow_h_Statics
 {
 	static constexpr FStructRegisterCompiledInInfo ScriptStructInfo[] = {
 		{ FItemSpawnRow::StaticStruct, Z_Construct_UScriptStruct_FItemSpawnRow_Statics::NewStructOps, TEXT("ItemSpawnRow"), &Z_Registration_Info_UScriptStruct_ItemSpawnRow, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FItemSpawnRow), 2060449933U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_git_HW083_Source_HW083_Public_ItemSpawnRow_h_2176497246(TEXT("/Script/HW083"),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_git_HW08_Source_HW083_Public_ItemSpawnRow_h_2176497246(TEXT("/Script/HW083"),
 	nullptr, 0,
-	Z_CompiledInDeferFile_FID_git_HW083_Source_HW083_Public_ItemSpawnRow_h_Statics::ScriptStructInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_git_HW083_Source_HW083_Public_ItemSpawnRow_h_Statics::ScriptStructInfo),
+	Z_CompiledInDeferFile_FID_git_HW08_Source_HW083_Public_ItemSpawnRow_h_Statics::ScriptStructInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_git_HW08_Source_HW083_Public_ItemSpawnRow_h_Statics::ScriptStructInfo),
 	nullptr, 0);
 // End Registration
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

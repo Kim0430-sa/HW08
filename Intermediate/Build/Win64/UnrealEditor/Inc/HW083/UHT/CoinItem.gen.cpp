@@ -90,14 +90,14 @@ ACoinItem::~ACoinItem() {}
 // End Class ACoinItem
 
 // Begin Registration
-struct Z_CompiledInDeferFile_FID_git_HW083_Source_HW083_Public_CoinItem_h_Statics
+struct Z_CompiledInDeferFile_FID_git_HW08_Source_HW083_Public_CoinItem_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
 		{ Z_Construct_UClass_ACoinItem, ACoinItem::StaticClass, TEXT("ACoinItem"), &Z_Registration_Info_UClass_ACoinItem, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ACoinItem), 2466249563U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_git_HW083_Source_HW083_Public_CoinItem_h_4083311084(TEXT("/Script/HW083"),
-	Z_CompiledInDeferFile_FID_git_HW083_Source_HW083_Public_CoinItem_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_git_HW083_Source_HW083_Public_CoinItem_h_Statics::ClassInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_git_HW08_Source_HW083_Public_CoinItem_h_4083311084(TEXT("/Script/HW083"),
+	Z_CompiledInDeferFile_FID_git_HW08_Source_HW083_Public_CoinItem_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_git_HW08_Source_HW083_Public_CoinItem_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);
 // End Registration

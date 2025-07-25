@@ -48,41 +48,35 @@ void ABaseItem::OnItemEndOverlap(
   int32 OtherBodyIndex)
 {
 }
- void ABaseItem::ActivateItem(AActor* Activator)
+void ABaseItem::ActivateItem(AActor* Activator)
 {
- UParticleSystemComponent* Particle = nullptr;
- 
+ TWeakObjectPtr<UParticleSystemComponent> Particle = nullptr;
+
  if (PickupParticle)
  {
-  Particle = UGameplayStatics::SpawnEmitterAtLocation(
-   GetWorld(),
-   PickupParticle,
-   GetActorLocation(),
-   GetActorRotation(),
-   true
-   );
+  Particle = UGameplayStatics::SpawnEmitterAtLocation(GetWorld(), PickupParticle, GetActorLocation(),
+   GetActorRotation(), true);
  }
+
  if (PickupSound)
  {
-  UGameplayStatics::PlaySoundAtLocation(
-   GetWorld(),
-   PickupSound,
-   GetActorLocation()
-   );
+  UGameplayStatics::PlaySoundAtLocation(GetWorld(), PickupSound, GetActorLocation());
  }
- if (Particle)
+
+ if (Particle.Get())
  {
   FTimerHandle DestroyParticleTimerHandle;
 
-  GetWorld()->GetTimerManager().SetTimer(
-   DestroyParticleTimerHandle,
+  GetWorld()->GetTimerManager().SetTimer(DestroyParticleTimerHandle,
    [Particle]()
    {
-    Particle->DestroyComponent();
+    if (IsValid(Particle.Get()))
+    {
+     Particle->DestroyComponent();
+    }
    },
    2.0f,
-   false
-   );
+   false);
  }
 }
  FName ABaseItem::GetItemType() const

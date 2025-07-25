@@ -1,8 +1,8 @@
 {
 	"SourceFiles": [
-		"C:\\git\\HW083\\Source\\HW083\\HW083.Build.cs",
-		"C:\\git\\HW083\\Source\\HW083.Target.cs",
-		"C:\\git\\HW083\\Source\\HW083Editor.Target.cs"
+		"C:\\git\\HW08\\Source\\HW083\\HW083.Build.cs",
+		"C:\\git\\HW08\\Source\\HW083.Target.cs",
+		"C:\\git\\HW08\\Source\\HW083Editor.Target.cs"
 	],
 	"EngineVersion": "5.5.4"
 }

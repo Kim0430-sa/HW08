@@ -14,7 +14,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #endif
 #define HW083_ItemSpawnRow_generated_h
 
-#define FID_git_HW083_Source_HW083_Public_ItemSpawnRow_h_9_GENERATED_BODY \
+#define FID_git_HW08_Source_HW083_Public_ItemSpawnRow_h_9_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FItemSpawnRow_Statics; \
 	HW083_API static class UScriptStruct* StaticStruct(); \
 	typedef FTableRowBase Super;
@@ -23,7 +23,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 template<> HW083_API UScriptStruct* StaticStruct<struct FItemSpawnRow>();
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID FID_git_HW083_Source_HW083_Public_ItemSpawnRow_h
+#define CURRENT_FILE_ID FID_git_HW08_Source_HW083_Public_ItemSpawnRow_h
 
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

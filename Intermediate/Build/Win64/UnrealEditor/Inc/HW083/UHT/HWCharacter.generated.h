@@ -15,7 +15,7 @@ struct FInputActionValue;
 #endif
 #define HW083_HWCharacter_generated_h
 
-#define FID_git_HW083_Source_HW083_Public_HWCharacter_h_17_RPC_WRAPPERS_NO_PURE_DECLS \
+#define FID_git_HW08_Source_HW083_Public_HWCharacter_h_17_RPC_WRAPPERS_NO_PURE_DECLS \
 	DECLARE_FUNCTION(execStopSprint); \
 	DECLARE_FUNCTION(execStartSprint); \
 	DECLARE_FUNCTION(execLook); \
@@ -26,7 +26,7 @@ struct FInputActionValue;
 	DECLARE_FUNCTION(execGetHealth);
 
 
-#define FID_git_HW083_Source_HW083_Public_HWCharacter_h_17_INCLASS_NO_PURE_DECLS \
+#define FID_git_HW08_Source_HW083_Public_HWCharacter_h_17_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesAHWCharacter(); \
 	friend struct Z_Construct_UClass_AHWCharacter_Statics; \
@@ -35,7 +35,7 @@ public: \
 	DECLARE_SERIALIZER(AHWCharacter)
 
 
-#define FID_git_HW083_Source_HW083_Public_HWCharacter_h_17_ENHANCED_CONSTRUCTORS \
+#define FID_git_HW08_Source_HW083_Public_HWCharacter_h_17_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	AHWCharacter(AHWCharacter&&); \
@@ -47,13 +47,13 @@ public: \
 	NO_API virtual ~AHWCharacter();
 
 
-#define FID_git_HW083_Source_HW083_Public_HWCharacter_h_14_PROLOG
-#define FID_git_HW083_Source_HW083_Public_HWCharacter_h_17_GENERATED_BODY \
+#define FID_git_HW08_Source_HW083_Public_HWCharacter_h_14_PROLOG
+#define FID_git_HW08_Source_HW083_Public_HWCharacter_h_17_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_git_HW083_Source_HW083_Public_HWCharacter_h_17_RPC_WRAPPERS_NO_PURE_DECLS \
-	FID_git_HW083_Source_HW083_Public_HWCharacter_h_17_INCLASS_NO_PURE_DECLS \
-	FID_git_HW083_Source_HW083_Public_HWCharacter_h_17_ENHANCED_CONSTRUCTORS \
+	FID_git_HW08_Source_HW083_Public_HWCharacter_h_17_RPC_WRAPPERS_NO_PURE_DECLS \
+	FID_git_HW08_Source_HW083_Public_HWCharacter_h_17_INCLASS_NO_PURE_DECLS \
+	FID_git_HW08_Source_HW083_Public_HWCharacter_h_17_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
@@ -61,7 +61,7 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 template<> HW083_API UClass* StaticClass<class AHWCharacter>();
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID FID_git_HW083_Source_HW083_Public_HWCharacter_h
+#define CURRENT_FILE_ID FID_git_HW08_Source_HW083_Public_HWCharacter_h
 
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

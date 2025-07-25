@@ -76,14 +76,14 @@ ABigCoinItem::~ABigCoinItem() {}
 // End Class ABigCoinItem
 
 // Begin Registration
-struct Z_CompiledInDeferFile_FID_git_HW083_Source_HW083_Public_BigCoinItem_h_Statics
+struct Z_CompiledInDeferFile_FID_git_HW08_Source_HW083_Public_BigCoinItem_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
 		{ Z_Construct_UClass_ABigCoinItem, ABigCoinItem::StaticClass, TEXT("ABigCoinItem"), &Z_Registration_Info_UClass_ABigCoinItem, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ABigCoinItem), 128392157U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_git_HW083_Source_HW083_Public_BigCoinItem_h_903202640(TEXT("/Script/HW083"),
-	Z_CompiledInDeferFile_FID_git_HW083_Source_HW083_Public_BigCoinItem_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_git_HW083_Source_HW083_Public_BigCoinItem_h_Statics::ClassInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_git_HW08_Source_HW083_Public_BigCoinItem_h_903202640(TEXT("/Script/HW083"),
+	Z_CompiledInDeferFile_FID_git_HW08_Source_HW083_Public_BigCoinItem_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_git_HW08_Source_HW083_Public_BigCoinItem_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);
 // End Registration
